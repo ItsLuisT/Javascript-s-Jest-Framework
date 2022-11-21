@@ -14,7 +14,7 @@ let oneEuroIs = {
 }
 
 let fromEuroToDollar = (euro) => {
-    const dollar = euro * 1.2 
+    const dollar = euro * oneEuroIs.USD 
     return dollar
 
 }
@@ -23,14 +23,14 @@ let fromEuroToDollar = (euro) => {
 // (similar to the keyword `export` when using webpack)
 
 let fromDollarToYen = (dollar) => {
-    const yen = (dollar) / 1.2 * 127.9
+    const yen = (dollar) / oneEuroIs.USD * oneEuroIs.JPY
     return yen
 
 }
 
 
 let fromYenToPound = (yen) => {
-    const pound = yen / 127.9 * 0.8
+    const pound = yen / oneEuroIs.JPY * oneEuroIs.GBP
     return pound
 
 }
